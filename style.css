@@ -1,13 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary-black:rgb(0, 0, 0);
+    --primary-blue:rgba(29,161,242,1.00);
+    --primary-grey:rgba(217,217,217,1.00);
+    --secondary-grey:rgb(136, 146, 176);
+    --primary-green:rgb(100, 255, 218);
+    --primary-white:rgb(230, 241, 255);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol {
+    list-style: none;
+    padding:0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 
 body {
-    margin: 0px;
-    width: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    background-color: rgb(10, 28, 54);
-    color: rgb(136, 146, 176);
-    line-height: 1.3;
-    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    background-color: var(--primary-black);
+    margin: auto;
+    max-width: 90%;
+
 }
+
+/* * lists */
+
+.list-unordered {
+    list-style-type: none;
+}
+
+.list-inline li {
+    display: inline;
+    /* margin: 1rem; */
+}
+
+/* * nav  */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    justify-content: space-between;
+    padding: 3rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar .active {
+    font-weight: bold;
+    color: var(--primary-blue);
+}
+
+.navbar .nav-brand a{
+    color: var(--primary-blue);
+}
+
+.navbar li {
+    display: inline;
+    margin: 2rem;
+}
+
+.navbar ul {
+    text-align: center;
+}
+
+.navbar ul a {
+    color: var(--primary-grey);
+}
+
+/* * header */
+
+.hero {
+    display: flex;
+    margin: auto;
+    max-width: 70%;
+    /* margin-bottom: 4rem; */
+}
+
+.main-text {
+    flex: 70%;
+    margin: 4rem 0;
+    /* padding: 3rem; */
+    
+}
+
+.main-text h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: var(--primary-white);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    text-align: left;
+
+ }
+.main-text h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--primary-white);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    text-align: left;
+ }
+.main-text h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-white);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    text-align: left;
+ }
+
+ .main-text p {
+    color: var(--primary-grey);
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace   
+ }
+
+ 
+
+    .div-social{
+    width: 50px;
+    position: fixed;
+    bottom: 0px;
+    left: 6.5rem;
+    color: var(--primary-grey);
+    }
+
+    .list-social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .list-social a{
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+        cursor: pointer;
+        padding: 9.5px;
+        font-size: 1.4rem;
+    }
+
+    .list-social li:last-of-type{
+            margin-bottom: 1.5rem;
+    }
+
+    .list-social::after{
+        content: "";
+        display: block;
+        width: 2px;
+        height: 100px;
+        margin: 0px auto;
+        background-color: var(--secondary-grey);
+    }
+
+
+
+
+
+
+
+
+
+
+
