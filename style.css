@@ -52,9 +52,11 @@ body {
     flex-direction: row;
     z-index: 10;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 3rem 0;
     font-weight: 700;
-    font-size: 1.5rem;
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
 }
 
 .navbar .active {
@@ -62,17 +64,18 @@ body {
     color: var(--primary-blue);
 }
 
-.navbar .nav-brand a{
+.navbar .nav-brand li{  
+    font-size: 2rem;
+}
+
+.navbar ol li a{
     color: var(--primary-blue);
 }
 
-.navbar li {
+.navbar .nav-list li {
+    font-size: 1.5rem;
     display: inline;
     margin: 2rem;
-}
-
-.navbar ul {
-    text-align: center;
 }
 
 .navbar ul a {
@@ -84,13 +87,13 @@ body {
 .hero {
     display: flex;
     margin: auto;
-    max-width: 70%;
+    max-width: 80%;
     /* margin-bottom: 4rem; */
 }
 
 .main-text {
-    flex: 70%;
-    margin: 4rem 0;
+    /* flex: 70%; */
+    margin: 5rem 0;
     /* padding: 3rem; */
     
 }
@@ -99,8 +102,9 @@ body {
     font-size: 4.5rem;
     font-weight: 600;
     color: var(--primary-white);
-    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-family:  "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
     text-align: left;
+    margin-bottom: 1rem;
 
  }
 .main-text h2 {
@@ -109,6 +113,8 @@ body {
     color: var(--primary-white);
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
     text-align: left;
+    margin-bottom: .5rem;
+    opacity: 70%;
  }
 .main-text h3 {
     font-size: 2.5rem;
@@ -116,11 +122,15 @@ body {
     color: var(--primary-white);
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
     text-align: left;
+    margin-bottom: 1rem;
+    opacity: 45%;
  }
 
  .main-text p {
-    color: var(--primary-grey);
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace   
+     font-size: 1.1rem;
+    color: var(--primary-blue);
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    margin-bottom: .5rem;
  }
 
  
@@ -129,8 +139,8 @@ body {
     width: 50px;
     position: fixed;
     bottom: 0px;
-    left: 6.5rem;
-    color: var(--primary-grey);
+    right: 4rem;
+    color: var(--primary-blue);
     }
 
     .list-social{
@@ -148,7 +158,7 @@ body {
         color: inherit;
         position: relative;
         cursor: pointer;
-        padding: 9.5px;
+        padding: 10px;
         font-size: 1.4rem;
     }
 
@@ -160,9 +170,9 @@ body {
         content: "";
         display: block;
         width: 2px;
-        height: 100px;
+        height: 105px;
         margin: 0px auto;
-        background-color: var(--secondary-grey);
+        background-color: var(--primary-blue);
     }
 
 
