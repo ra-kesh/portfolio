@@ -7,6 +7,7 @@
     --secondary-grey:rgb(136, 146, 176);
     --primary-green:rgb(100, 255, 218);
     --primary-white:rgb(230, 241, 255);
+    --secondary-blue:rgb(45, 57, 82);
 }
 
 * {
@@ -45,6 +46,20 @@ body {
     /* margin: 1rem; */
 }
 
+
+.link-primary {
+    border: 2px solid var(--primary-blue);
+    background-color: transparent;
+    color: var(--primary-blue);
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+
 /* * nav  */
 
 .navbar {
@@ -79,23 +94,24 @@ body {
 }
 
 .navbar ul a {
-    color: var(--primary-grey);
+    color: var(--primary-blue);
 }
+
 
 /* * header */
 
 .hero {
     display: flex;
+    flex-direction: column;
     margin: auto;
     max-width: 80%;
+    min-height: 100vh;
     /* margin-bottom: 4rem; */
 }
 
 .main-text {
-    /* flex: 70%; */
-    margin: 5rem 0;
-    /* padding: 3rem; */
-    
+    margin: 5rem 0 3rem;
+    width: 100%;
 }
 
 .main-text h1 {
@@ -114,7 +130,7 @@ body {
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
     text-align: left;
     margin-bottom: .5rem;
-    opacity: 70%;
+    opacity: 80%;
  }
 .main-text h3 {
     font-size: 2.5rem;
@@ -122,18 +138,290 @@ body {
     color: var(--primary-white);
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
     text-align: left;
-    margin-bottom: 1rem;
-    opacity: 45%;
+    margin-bottom: .5rem;
+    opacity: 60%;
+ }
+.main-text h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-white);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    text-align: left;
+    /* margin-bottom: .5rem; */
+    opacity: 40%;
  }
 
  .main-text p {
-     font-size: 1.1rem;
+    font-size: 1.1rem;
     color: var(--primary-blue);
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
     margin-bottom: .5rem;
  }
 
+
+ /* about section */
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 80%;
+    min-height: 90vh;
+    padding-top: 10rem; 
+}
+
+.about-me-text {
+    flex: 50%;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+    font-family: inconsolata,monospace;
+    color: var(--primary-white);
+}
+
+.about-me-text p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+    /* margin: 0rem 0rem 0.625rem 0rem; */
+}
+
+.about-me-text h1 {
+    font-size: 2rem;
+    color: #1c3548;
+    /* margin: 0rem 0rem 0.625rem 0rem; */
+}
+
+
+.about-title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    letter-spacing: 3px;
+    /* font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif; */
+}
+
+.about-title::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 15rem;
+    background-color: var(--primary-blue);
+    position: relative;
+    top: 4px;
+    margin-left: 20px;
+}
+
  
+/* project section */
+
+.my-projects{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 80%;
+    min-height: 100vh;
+    padding-top: 10rem;     
+}
+
+.project-title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    letter-spacing: 3px;
+    /* font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif; */
+}
+
+.project-title::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 15rem;
+    background-color: var(--primary-blue);
+    position: relative;
+    top: 4px;
+    margin-left: 20px;
+}
+
+.project-description{
+    margin: 2rem 0 3rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: var(--primary-white);
+    max-width: 90%;
+}
+
+
+.div-project{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rem;
+
+}
+.project-image{
+    max-width: 65%;
+    
+ }
+ 
+
+.project-text{
+    font-family: inconsolata,monospace; 
+    color: var(--primary-white);
+    max-width: 35%;
+    align-items: flex-end;
+}
+
+.project-info{
+    text-align: right;
+    font-size: 2rem;
+    color: var(--primary-blue);
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.project-image img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+.project-info-card{
+    padding: 1rem;
+    background-color: #212121;
+    position: relative;
+    width: 110%;
+    margin-left: -30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px -15px #212121;
+    line-height: 1.5rem;
+}
+
+.project-info-card p{
+    padding:5px;
+}
+
+.project-link{
+    text-align: right;
+    font-size: 1.3rem;   
+    font-weight: 600;
+    margin: 2rem 0;
+}
+
+.project-link a{
+    color: var(--primary-blue);
+}
+
+.all-project{
+    margin: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* side  social list  */
 
     .div-social{
     width: 50px;
@@ -174,7 +462,7 @@ body {
         margin: 0px auto;
         background-color: var(--primary-blue);
     }
-
+   
 
 
 
