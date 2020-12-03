@@ -111,7 +111,7 @@ body {
 }
 
 .main-text {
-    margin: 5rem 0 3rem;
+    margin: 4rem 0 3rem;
     width: 100%;
 }
 
@@ -121,11 +121,9 @@ body {
     color: var(--primary-white);
     font-family:  "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
     text-align: left;
-    margin-bottom: 1rem;
-
  }
 .main-text h2 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: 600;
     color: var(--primary-white);
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
@@ -148,7 +146,6 @@ body {
     color: var(--primary-white);
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
     text-align: left;
-    /* margin-bottom: .5rem; */
     opacity: 40%;
  }
 
@@ -166,6 +163,29 @@ body {
     margin: auto;
     max-width: 80%;
     padding-top: 10rem; 
+ }
+
+ .section-title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    letter-spacing: 3px;
+ }
+
+ .section-title::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 15rem;
+    background-color: var(--primary-blue);
+    position: relative;
+    top: 4px;
+    margin-left: 20px;
  }
 
 
@@ -197,29 +217,7 @@ body {
 }
 
 
-.about-title{
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    width: 100%;
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary-blue);
-    letter-spacing: 3px;
-    /* font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif; */
-}
 
-.about-title::after{
-    content: "";
-    display: block;
-    height: 1px;
-    width: 15rem;
-    background-color: var(--primary-blue);
-    position: relative;
-    top: 4px;
-    margin-left: 20px;
-}
 
  
 /* project section */
@@ -389,7 +387,7 @@ body {
     max-width: 90%;
 }
 
-.div-blog{
+.div-grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 15px;
@@ -397,7 +395,7 @@ body {
     margin-bottom: 10rem;
 }
 
-.blog-card{
+.grid-card{
     box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
     display: flex;
     justify-content: space-between;
@@ -503,78 +501,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* side  social list  */
 
     .div-social{
@@ -618,6 +544,98 @@ body {
     }
 
    
+
+/* projects */
+
+.section-two{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 80%;
+    min-height: auto;
+}
+
+.section-three{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 80%;
+    min-height: auto;
+
+}
+
+.main-text-two{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-white);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    text-align: left;
+    margin:auto;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.week{
+    margin-bottom: 3rem;
+}
+
+.card-icon i{
+    margin-top: 5px;
+    color: var(--primary-blue);
+}
+
+.img-card img{
+    max-width: 100%;
+}
+
+.img-card{
+    border: 2px solid ;
+    position: relative;
+    height: 100%;
+    border-radius: 5px;
+    color: var(--secondary-blue);
+}
+
+
+/* blogs */
+
+.div-flex{
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+/* 
+.ul-blog{
+    display: block;
+    position: relative;
+    width: max-content;
+    z-index: 3;
+}
+
+li{
+    display: list-item;
+}
+
+button{
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    height: 42px;
+    padding: 0px 20px 2px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    border-left: 2px solid rgb(51, 63, 88);
+    text-align: left;
+    white-space: nowrap;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 13px;
+    color: rgb(100, 255, 218);
+} */
 
 
 
