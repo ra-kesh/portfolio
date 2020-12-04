@@ -328,7 +328,12 @@ body {
 }
 
 .project-info-card p{
-    padding:5px;
+    padding: 5px;
+}
+
+.light{
+    opacity: 70%;
+    font-size: smaller;
 }
 
 .project-link{
@@ -389,7 +394,7 @@ body {
 
 .div-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 15px;
     position: relative;
     margin-bottom: 10rem;
@@ -491,7 +496,7 @@ body {
 }
 
 .footer-section p{
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .footer-element p {
@@ -552,7 +557,7 @@ body {
     flex-direction: column;
     margin: auto;
     max-width: 80%;
-    min-height: auto;
+    min-height: 80vh;
 }
 
 .section-three{
@@ -585,6 +590,9 @@ body {
 }
 
 .img-card img{
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
     max-width: 100%;
 }
 
@@ -594,50 +602,72 @@ body {
     height: 100%;
     border-radius: 5px;
     color: var(--secondary-blue);
+  
+}
+
+
+.project-card-link{
+    display: block;
+    text-align: right;
+    
+}
+
+.project-card-link i{
+    color: var(--primary-blue);
 }
 
 
 /* blogs */
 
-.div-flex{
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-}
-/* 
-.ul-blog{
-    display: block;
-    position: relative;
-    width: max-content;
-    z-index: 3;
+.article{
+    margin-bottom: 10rem;
 }
 
-li{
-    display: list-item;
+.article-title{
+    margin-bottom: 3rem;
 }
 
-button{
-    text-decoration: none;
-    text-decoration-skip-ink: auto;
+.div-grid-two{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
     position: relative;
-    cursor: pointer;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    width: 100%;
-    background-color: transparent;
-    height: 42px;
-    padding: 0px 20px 2px;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-    border-left: 2px solid rgb(51, 63, 88);
-    text-align: left;
-    white-space: nowrap;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
-    font-size: 13px;
-    color: rgb(100, 255, 218);
-} */
+}
 
+.blog-date{
+    grid-row: span 1/auto;
+    padding: 1rem 0rem;
+}
 
+.blog-date p{
+    border: 2px solid var(--primary-black) ;
+    outline: none;
+    border-left-color: var(--primary-blue);
+    padding: .5rem 1rem;
+    color: var(--primary-blue);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 2px;  
+}
+
+.blog-name{
+    grid-row:span 3/auto;
+    grid-column: span 3/auto;
+    padding: 1rem;
+}
+
+.blog-name a{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--primary-white);
+}
+
+.blog-name p{
+    opacity: 70%;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+  
 
 
 
