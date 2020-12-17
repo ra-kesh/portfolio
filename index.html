@@ -10,14 +10,10 @@
 <body>
     <div>
         <nav class="navbar">
-            <ol class="list-unordered nav-brand">
-                <li><a class="links" href="/">RAKESH.</a></li>
-            </ol>
             <ul class="list-unordered nav-list">
-                <li><a class="links active" href="/">Home🏡</a></li>
-                <li><a class="links" href="projects.html">Projects📁</a>
-                </li>
-                <li><a class="links " href="blogs.html">Blogs✍️</a></li>
+                <li><a class="links" href="/">🏡Home</a></li>
+                <li><a class="links" href="projects.html">📁Projects</a></li>
+                <li><a class="links" href="blogs.html">✍️Blogs</a></li>
             </ul>
         </nav>
     </div>
@@ -49,7 +45,7 @@
         </header>
         <section class="section about-me">      
             <h3 class="section-title">My Story So Far</h3>
-            <div class="about-me-text">
+            <div class="section-description">
                 <p>
                     Hello, I'm Rakesh, an aspiring Full-Stack Devloper based in India.
                     <br> I have decided to learn Web Devlopment during the lockdown and
@@ -57,49 +53,80 @@
                 </p>  
                 <br> 
                 <p>
-                    Currently I am learning web devlopement from Tanaya Pratap at NeogCamp .
-                    I am familiar with HTML, CSS, JavaScript, PHP, NodeJS, Laravel, MongoDB, MySQL
+                    Currently I am learning web devlopement from Tanaya Pratap at his NeogCamp .
+                    Till now I am familiar with HTML, CSS, JavaScript,React, PHP, NodeJS, Laravel, MongoDB, MySQL
                     but I am always open to learning and trying new things.
-                </p>   
+                </p> 
+                <ul class="list-inline list-tech">
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-js-square"></i></li>
+                    <li><i class="fab fa-react"></i></li>
+                    <li><i class="fab fa-node-js"></i></li>
+                    <li><i class="fab fa-php"></i></li>
+                    <li><i class="fab fa-laravel"></i></li>
+                </ul>  
             </div>
         </section>
         <section class="section my-projects">      
             <h3 class="section-title">Things I have build</h3>
-            <p class="project-description">
+            <p class="section-description">
                In my brief Journey so far I have had chance to work upon 
                some real world projects too, along with my hobby projects. <br><br>
                you can find some of them below.👇
             </p> 
-            <div class="div-project">
-                <div class="project-image">
-                    <img src="assets\chrome_bjmBMt63tb.png" alt="">
+            <div class="container-project">
+                <div class="div-project">
+                    <div class="project-site">
+                        <img src="assets\ezgif-1-5f2c8b16077a.gif" alt="" sizes="" srcset="">
+                    </div>
+                    <div class="project-description">
+
+                       
+                        <div>
+                            <h1>Just JavaScript</h1>
+                       </div>
+                        <div>
+                                <h4 class="light">
+                                    A personally curated list of best resources for learning JavaScript core  concepts , Made in React .
+                                </h4>
+                        </div>
+                        <div class="project-link">
+                              <a href="https://just-javascript.netlify.app/" target="blank">Visit site
+                                 <i class="fas fa-external-link-alt" aria-hidden="true"></i>      
+                              <a href="https://github.com/ra-kesh/just-javascript" target="blank">View Source Code
+                                 <i class="fas fa-external-link-alt" aria-hidden="true"></i>      
+                        </div>
+                       
+                    </div>
                 </div>
-                <div class="project-text">
-                    <div class="project-info">
-                        <p>Adhvann</p>
+              
+                <div class="div-project reverse">
+                    <div class="project-site">
+                        <img src="assets\ezgif-2-c12d7436f519.gif" alt="" sizes="" srcset="">
                     </div>
-                    <div class="project-info-card">
-                        <p>
-                           A modern responsive website
-                           with a custom admin panel and a dynamic blog page .<br>
-                        </p> 
-                        <p class="light">
-                            
-                            <strong>FRONTEND :</strong> HTML,CSS,JavaScript,Bootstrap<br>
-                            <strong>BACKEND :</strong> PHP,NodeJS,Laravel <br>
-                            <strong>DATABASE :</strong> MySQL<br>
-                            <strong>HOSTING :</strong> Hostinger Shared Hosting<br>
-                        </p> 
-                      
+                    <div class="project-description">
+                        <a href=""></a>
+                        <h1>
+                            Inside Outt.
+                        </h1>
+                        <div>
+                                <h4 class="light">
+                                    A simple emoji interpreter for old school folks like me , Made by React .
+                                </h4>
+                        </div>
+                        <div class="project-link">
+                              <a href="https://insideoutt.netlify.app/" target="blank">Visit site
+                                 <i class="fas fa-external-link-alt" aria-hidden="true"></i>      
+                              <a href="https://github.com/ra-kesh/insideout" target="blank">View Source Code
+                                 <i class="fas fa-external-link-alt" aria-hidden="true"></i>      
+                        </div>
+                       
                     </div>
-                    <div class="project-link">
-                          <a href="http://www.adhvann.in/" target="blank">Visit the site
-                             <i class="fas fa-external-link-alt" aria-hidden="true"></i>      
-                    </div>
-                   
                 </div>
             </div>
-            <div class="all-project">
+           
+            <div class="all">
                 <a href="projects.html" class="link-primary">
                     View all my projects <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
              </div>
@@ -107,9 +134,9 @@
         </section>
         <section class="section my-blogs">      
             <h3 class="section-title">My recent articles </h3>
-             <p class="blog-description">
+             <p class="section-description">
                I have written some articles to help newbies who have just 
-               started learning to code . You can find some of them below .👇
+               started learning to code . You can find some of them below 👇.
             </p> 
             <div class="div-grid">
               
@@ -148,7 +175,7 @@
                 </div>     
                
             </div>
-            <div class="all-project">
+            <div class="all">
                 <a href="blogs.html" class="link-primary">
                     View all my articles <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
              </div>
