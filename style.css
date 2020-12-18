@@ -60,20 +60,89 @@ body {
     cursor: pointer;
 }
 
+/* others */
+.light{
+    opacity: 60%;
+}
+
+.all{
+    margin: auto;
+    margin-bottom: 15vh;
+
+}
+.correct{
+    flex-direction: row;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
 
 
+ /* section */
+
+ .section{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 80%;
+    padding-top: 20vh; 
+    min-height: 100vh;
+ }
+
+ .section-title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: var(--primary-blue);
+    letter-spacing: 3px;
+ }
+
+ .section-title::after{
+    content: "";
+    display: block;
+    height: 1.2px;
+    width: 20vw;
+    background-color: var(--primary-blue);
+    position: relative;
+    top: .5vh;
+    margin-left: 20px;
+ }
+
+ .section-description{
+    flex: 50%;
+    flex-wrap: wrap;
+    margin: 8vh 0;
+    font-family: inconsolata,monospace;
+    color: var(--primary-white);
+    font-size: 2vw;
+    line-height: 5vh;
+    font-weight: 400;
+ }
+
+ @media screen and (max-width:1025px){
+    .section{
+        min-height: min-content;
+        padding-top: 15vh;
+     }
+     .section-description{
+        margin: 4vh 0;
+        font-size: 2.1vw;
+        line-height: 3vh;
+     }
+   
+}
 
 
-
-
-
-
-
-
-
-
+/* **************************************************************************************************** */
 
 /* website starts- components end */
+
+
 
 /* * nav  */
 
@@ -105,6 +174,17 @@ body {
 .navbar ul a {
     color: var(--primary-blue);
 }
+
+@media screen and (max-width:1025px){
+    .navbar{
+        padding: 5vh 0;
+    }
+    .navbar .nav-list li {
+        font-size: 2.5vw;   
+    }
+    
+}
+
 
 
 /* * header */
@@ -154,50 +234,29 @@ body {
     margin-bottom: 1vh;
  }
 
- /* section */
-
- .section{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 80%;
-    padding-top: 20vh; 
-    min-height: 100vh;
+ @media screen and (min-width:1030px){
+    .hero {
+        min-height: 100vh;
+    }
  }
 
- .section-title{
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    width: 100%;
-    font-size: 2.5vw;
-    font-weight: 700;
-    color: var(--primary-blue);
-    letter-spacing: 3px;
+
+ @media screen and (max-width:1025px){
+
+    .hero{
+        min-height: min-content;
+    }
+    
+    .main-text {
+        margin: 6vh 0 3vh;
+    }
  }
 
- .section-title::after{
-    content: "";
-    display: block;
-    height: 1.2px;
-    width: 20vw;
-    background-color: var(--primary-blue);
-    position: relative;
-    top: .5vh;
-    margin-left: 20px;
- }
 
- .section-description{
-    flex: 50%;
-    flex-wrap: wrap;
-    margin: 8vh 0;
-    font-family: inconsolata,monospace;
-    color: var(--primary-white);
-    font-size: 2vw;
-    line-height: 5vh;
-    font-weight: 400;
- }
+
+
+
+
 
 
  /* about section */
@@ -212,6 +271,16 @@ body {
      opacity: 15%;
      /* color: #212121; */
  }
+
+ @media screen and (max-width:1025px){
+    .list-tech{
+        margin-top: 7vh;
+    }
+   
+}
+
+ 
+
  
 /* project section */
 
@@ -232,13 +301,6 @@ body {
     justify-content: space-between;
 }
 
-.correct{
-    flex-direction: row;
-}
-
-.reverse{
-    flex-direction: row-reverse;
-}
 
 .project-site{
     display: flex;  
@@ -255,15 +317,13 @@ body {
 .project-description{
     display: flex;
     flex-wrap: wrap;
-    padding: 2vh;
-    flex: 1;
-    margin-top: 5vh;
+    padding: 2vh;   
+    font-size: 2vw;
 }
-
 .project-link{
     display: flex;
     flex-direction: column;
-    font-size: 2.5vh;   
+    font-size: 1.5vw;   
     font-weight: 600;
     line-height: 5vh;
 }
@@ -272,35 +332,58 @@ body {
     color: var(--primary-blue);
 }
 
-.light{
-    opacity: 60%;
-}
 
-.all{
-    margin: auto;
+@media screen and (min-width:1030px){
+   
+.project-description{  
+    flex: 1;
+} 
+.project-description h1{
+    margin-top: 5vh;
+}
+.container-project{
     margin-bottom: 15vh;
+}
 
 }
+@media screen and (max-width:1025px){
+ .project-site{
+      flex: 1;
+    }
+  .project-link{
+      line-height: 2vh;
+      margin-top: 3vh;
+  }
+
+  .project-description{
+      font-size: 3vw;
+  }
+  .project-description h1{
+    margin-bottom: 2vh;
+  }
+  .container-project{
+    margin-bottom: 5vh;
+}
+
+
+  
+}
+
+
 
 
 /* blog section */
 
-.div-grid{
+.div-blog{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 20vh;
     gap: 2vw;
-    
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    
-    position: relative;
-     */
 }
 
-.grid-card{
+.blog-card{
     box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
     display: flex;
     justify-content: space-between;
@@ -310,11 +393,7 @@ body {
     padding: 4vh 2vh;
     height: 100%;
     border-radius: 3px;
-    background-color: var(--secondary-black);
-    flex: 1;
-    min-height: 30vh;
-    
-    
+    background-color: var(--secondary-black);   
 }
 
 .article-icon svg{
@@ -322,19 +401,50 @@ body {
 }
 
 .article-head {
-    font-size: 3vh;
+    font-size: 1.8vw;
     padding:0 2vh;
 }
 
 .article-head p{
     margin: 1rem 0;
     line-height: 3vh;
-    font-size: 2.5vh;
+    font-size: 1.3vw;
     opacity: 70%;
 }
 .article-head a {  
     color: var(--primary-white);
 }
+@media screen and (max-width:1025px){
+    .div-blog{
+        margin-bottom: 10vh;
+    }
+    
+    .my-blogs{
+        padding-top: 0;
+    }
+    .article-head {
+        font-size: 2vw;
+    }
+    .article-head p{
+        line-height: 2vh;
+        font-size: 1.5vw;
+    }
+     
+   }
+@media screen and (min-width:1030px){
+    .div-blog{
+        margin-bottom: 20vh;
+    }
+    
+    .blog-card{
+        flex: 1 ; 
+        min-height: 35vh;    
+    }
+     
+   }
+
+
+
 
 
 /* social section */
@@ -368,8 +478,6 @@ body {
     border: 2px solid var(--primary-blue);
     border-radius: 6px;
     text-align: center;
-    padding: 5vh;
-    margin-top: 20vh ;
 }
 
 .contact-me h2 {
@@ -387,9 +495,33 @@ body {
     line-height:2rem;
 }
 
-.contact{
+
+@media screen and (max-width:1025px){
+   .contact{
+       padding-top: 0;
+       min-height: min-content;
+       margin-bottom: 15vh;
+   }
+   .contact-me{
+    padding: 3vh;
+    margin-top: 10vh ;
+   }
+   .social-button{
+    font-size: 2vw;
+    }
+     
+   }
+@media screen and (min-width:1030px){
+   .contact-me{
+    padding: 5vh;
+    margin-top: 20vh ;
+   }
+   .contact{
     margin-bottom: 30vh;
-}
+   }
+     
+   }
+
 
 /* footer */
 
@@ -412,7 +544,7 @@ body {
     justify-content: center;
 }
 
-
+/* ************************************************************************************************************** */
 
 /* side  social list  */
 
@@ -467,7 +599,7 @@ body {
       }
   }
 
-   
+   /****************************************************************************************************************  */
 
 /* projects page */
 
@@ -488,74 +620,70 @@ body {
 
 }
 
+
+.div-subtitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 2vw;
+    margin: 5vh;
+}
+
 .main-text-two{
-    font-size: 2rem;
+    display: flex;
+    justify-content: flex-start;
     font-weight: 600;
     color: var(--primary-white);
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-    text-align: left;
-    margin:auto;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
 }
 
-.week{
-    margin-bottom: 3rem;
+@media screen and (max-width:1025px){
+    .section-two{
+        min-height:min-content;
+    }
+    .type{
+        margin: 10vh 0 0;
+    }
+    .main-text-two{
+        font-size: 3vw;
+        margin: 10vh 0;
+     }
+    
 }
-
-.card-icon i{
-    margin-top: 5px;
-    color: var(--primary-blue);
-}
-
-.img-card img{
-    min-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.img-card{
-    border: 2px solid ;
-    position: relative;
-    height: 100%;
-    border-radius: 5px;
-    color: var(--secondary-blue);
-  
-}
-
-
-.project-card-link{
-    display: block;
-    text-align: right;
+@media screen and (min-width:1030px){
+    .section-three{
+        margin-bottom: 20vh;
+    }
+    .section-two{
+        min-height: 80vh;
+    }
+    .main-text-two{
+       font-size: 3vw;
+       margin: 30vh 0;
+    }
+    .type{
+        margin: 10vh 0;
+    }
     
 }
 
-.project-card-link i{
-    color: var(--primary-blue);
-}
 
-
+/* ************************************************************************************************* */
 /* blogs page*/
 
-.article{
-    margin-bottom: 10rem;
-}
 
-.article-title{
-    margin-bottom: 3rem;
-}
 
 .div-grid-two{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
     position: relative;
+
 }
 
 .blog-date{
     grid-row: span 1/auto;
-    padding: 1rem 0rem;
+    padding: 2vh 0;
 }
 
 .blog-date p{
@@ -564,7 +692,7 @@ body {
     border-left-color: var(--primary-blue);
     padding: .5rem 1rem;
     color: var(--primary-blue);
-    font-size: 1.1rem;
+    font-size: 1.3vw;
     font-weight: 600;
     letter-spacing: 2px;  
 }
@@ -572,21 +700,48 @@ body {
 .blog-name{
     grid-row:span 3/auto;
     grid-column: span 3/auto;
-    padding: 1rem;
+    padding: 2vh 0;
 }
 
 .blog-name a{
-    margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.8vw;
     color: var(--primary-white);
 }
 
 .blog-name p{
     opacity: 70%;
-    margin-top: 1.5rem;
-    font-size: 1.2rem;
+    margin-top: 2vh;
+    font-size: 1.5vw;
 }
   
+
+@media screen and (max-width:1025px){
+   
+    .container-blog{
+        margin-top: 5vh;
+    }
+    .div-grid-two{
+       margin-bottom: 3vh;
+    }
+    .footer-blog{
+        margin-top: 20vh;
+    }
+    .blog-name{
+        padding: 0 0 2vh  ;
+    }
+    .blog-date{
+        padding: 0 0 1vh ;
+    }
+    
+    
+    
+}
+@media screen and (min-width:1030px){
+    .footer-blog{
+        margin-top: 50vh;
+    }
+   
+}
 
 
 
