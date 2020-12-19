@@ -47,6 +47,12 @@ body {
     /* margin: 1rem; */
 }
 
+@media screen and (max-width:1025px){
+    .link-primary{
+        border: 1px solid var(--primary-blue);
+    }
+}
+
 
 .link-primary {
     border: 2px solid var(--primary-blue);
@@ -58,6 +64,11 @@ body {
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
     letter-spacing: 1.5px;
     cursor: pointer;
+}
+
+.link-primary:hover{
+    color: var(--primary-white);
+    background-color: var(--primary-blue);
 }
 
 /* others */
@@ -268,7 +279,7 @@ body {
      margin-top: 15vh;
      font-size: 4vw;
      cursor: pointer;
-     opacity: 15%;
+     opacity: 25%;
      /* color: #212121; */
  }
 
@@ -384,7 +395,6 @@ body {
 }
 
 .blog-card{
-    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -393,7 +403,8 @@ body {
     padding: 4vh 2vh;
     height: 100%;
     border-radius: 3px;
-    background-color: var(--secondary-black);   
+    background-color: var(--secondary-black);
+    border: 1px solid rgba(255, 255, 255, 0.1);   
 }
 
 .article-icon svg{
@@ -475,7 +486,6 @@ body {
 .contact-me{
     max-width: 80%;
     margin: auto;
-    border: 2px solid var(--primary-blue);
     border-radius: 6px;
     text-align: center;
 }
@@ -505,6 +515,7 @@ body {
    .contact-me{
     padding: 3vh;
     margin-top: 10vh ;
+    border: 1px solid var(--primary-blue);
    }
    .social-button{
     font-size: 2vw;
@@ -515,6 +526,7 @@ body {
    .contact-me{
     padding: 5vh;
     margin-top: 20vh ;
+    border: 2px solid var(--primary-blue);
    }
    .contact{
     margin-bottom: 30vh;
